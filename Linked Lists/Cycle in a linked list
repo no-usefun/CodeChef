@@ -1,10 +1,6 @@
-
 class Solution {
-    public static Node detectCycle(Node head){
-        
-        if(head==null || head.next==null){
-            return head;
-        }
+    public static Node detectCycle(Node head){        
+        if(head==null || head.next==null) return head;
         
         Node slow = head;
         Node fast = head;
@@ -20,7 +16,6 @@ class Solution {
                 return slow;
             }
         }
-        
         return slow;
     }
 }

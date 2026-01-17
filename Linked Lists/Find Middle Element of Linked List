@@ -1,7 +1,5 @@
 static int getMiddleElement(Node head){
-    if(head==null){
-        return -1;
-    }
+    if(head==null) return -1;
     
     Node slow = head;
     Node fast = head;
@@ -10,6 +8,5 @@ static int getMiddleElement(Node head){
         slow = slow.next;
         fast = fast.next.next;
     }
-    
     return slow.val;
 }
